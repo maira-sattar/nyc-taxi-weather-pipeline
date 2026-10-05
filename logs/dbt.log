@@ -1,0 +1,186 @@
+[0m18:06:51.731766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000261C343C350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000261C3437FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000261C34CE9D0>]}
+
+
+============================== 18:06:51.747395 | 20410deb-e6eb-41be-a547-963c5d4de1b1 ==============================
+[0m18:06:51.747395 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:06:51.747395 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt init tax-dbt', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m18:06:51.800466 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\HP\.dbt
+[0m18:07:10.512841 [debug] [MainThread]: Starter project path: C:\Users\HP\Desktop\nyc-taxi-weather-pipeline\venv\Lib\site-packages\dbt\include\starter_project
+[0m18:07:13.445782 [info ] [MainThread]: Setting up your profile.
+[0m18:08:44.946088 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m18:08:44.961709 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\nyc-taxi-weather-pipeline\venv\Lib\site-packages\dbt\cli\requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\nyc-taxi-weather-pipeline\venv\Lib\site-packages\dbt\cli\requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\nyc-taxi-weather-pipeline\venv\Lib\site-packages\dbt\cli\main.py", line 504, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\HP\Desktop\nyc-taxi-weather-pipeline\venv\Lib\site-packages\dbt\task\init.py", line 363, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\HP\Desktop\nyc-taxi-weather-pipeline\venv\Lib\site-packages\dbt\task\init.py", line 265, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\HP\Desktop\nyc-taxi-weather-pipeline\venv\Lib\site-packages\dbt\task\init.py", line 182, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\HP\Desktop\nyc-taxi-weather-pipeline\venv\Lib\site-packages\dbt\task\init.py", line 166, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\nyc-taxi-weather-pipeline\venv\Lib\site-packages\dbt\task\init.py", line 119, in generate_target_from_input
+    target = self.generate_target_from_input(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\nyc-taxi-weather-pipeline\venv\Lib\site-packages\dbt\task\init.py", line 132, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\nyc-taxi-weather-pipeline\venv\Lib\site-packages\click\termui.py", line 262, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\nyc-taxi-weather-pipeline\venv\Lib\site-packages\click\termui.py", line 245, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m18:08:44.965763 [debug] [MainThread]: Command `dbt init` failed at 18:08:44.965763 after 113.44 seconds
+[0m18:08:44.969091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000261C34CE950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000261CBAC97D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000261C34CE9D0>]}
+[0m18:08:44.969091 [debug] [MainThread]: Flushing usage events
+[0m18:08:46.811471 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:08:55.519151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027755242AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027759A63010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027759AAF650>]}
+
+
+============================== 18:08:55.519151 | c3d53a06-3962-487e-9630-75ba9d1ab0c1 ==============================
+[0m18:08:55.519151 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:08:55.519151 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init tax-dbt', 'log_path': 'logs'}
+[0m18:09:01.566917 [info ] [MainThread]: A project called taxi_dbt already exists here.
+[0m18:09:01.566917 [debug] [MainThread]: Command `dbt init` succeeded at 18:09:01.566917 after 6.27 seconds
+[0m18:09:01.566917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027759927F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027759A16D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027759A16B90>]}
+[0m18:09:01.566917 [debug] [MainThread]: Flushing usage events
+[0m18:09:03.181556 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:09:23.032056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD797C2BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD7E01FF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD7DF87D50>]}
+
+
+============================== 18:09:23.125805 | 296f1245-d1bd-4f5d-9a2f-11aa7c0cc200 ==============================
+[0m18:09:23.125805 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:09:23.125805 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init tax-dbt', 'log_path': 'logs'}
+[0m18:09:31.139112 [debug] [MainThread]: Starter project path: C:\Users\HP\Desktop\nyc-taxi-weather-pipeline\venv\Lib\site-packages\dbt\include\starter_project
+[0m18:09:31.197657 [info ] [MainThread]: Setting up your profile.
+[0m18:12:47.681634 [info ] [MainThread]: Profile taxi_dbt written to C:\Users\HP\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m18:12:47.681634 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m18:12:47.696380 [info ] [MainThread]: dbt version: 1.12.5
+[0m18:12:47.698158 [info ] [MainThread]: python version: 3.11.5
+[0m18:12:47.699990 [info ] [MainThread]: python path: C:\Users\HP\Desktop\nyc-taxi-weather-pipeline\venv\Scripts\python.exe
+[0m18:12:47.699990 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m18:12:47.854906 [info ] [MainThread]: Using profiles dir at C:\Users\HP\.dbt
+[0m18:12:47.854906 [info ] [MainThread]: Using profiles.yml file at C:\Users\HP\.dbt\profiles.yml
+[0m18:12:47.854906 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\HP\Desktop\nyc-taxi-weather-pipeline\taxi_dbt\dbt_project.yml
+[0m18:12:47.854906 [info ] [MainThread]: adapter type: bigquery
+[0m18:12:47.854906 [info ] [MainThread]: adapter version: 1.12.1
+[0m18:12:48.088602 [info ] [MainThread]: Configuration:
+[0m18:12:48.088602 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:12:48.088602 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:12:48.088602 [info ] [MainThread]: Required dependencies:
+[0m18:12:48.088602 [debug] [MainThread]: Executing "git --help"
+[0m18:12:48.180317 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:12:48.180317 [debug] [MainThread]: STDERR: "b''"
+[0m18:12:48.180317 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:12:48.180317 [info ] [MainThread]: Connection:
+[0m18:12:48.180317 [info ] [MainThread]:   method: oauth
+[0m18:12:48.180317 [info ] [MainThread]:   database: nyc-data-509704
+[0m18:12:48.180317 [info ] [MainThread]:   execution_project: nyc-data-509704
+[0m18:12:48.180317 [info ] [MainThread]:   schema: taxi_dbt
+[0m18:12:48.195241 [info ] [MainThread]:   location: US
+[0m18:12:48.197472 [info ] [MainThread]:   priority: interactive
+[0m18:12:48.199070 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:12:48.199070 [info ] [MainThread]:   reservation: None
+[0m18:12:48.199070 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:12:48.199070 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:12:48.207029 [info ] [MainThread]:   job_retries: 1
+[0m18:12:48.211029 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:12:48.212275 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:12:48.212275 [info ] [MainThread]:   job_link_info_level_log: False
+[0m18:12:48.212275 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:12:48.212275 [info ] [MainThread]:   client_id: None
+[0m18:12:48.212275 [info ] [MainThread]:   token_uri: None
+[0m18:12:48.219934 [info ] [MainThread]:   compute_region: None
+[0m18:12:48.220772 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:12:48.223067 [info ] [MainThread]:   gcs_bucket: None
+[0m18:12:48.228023 [info ] [MainThread]:   dataproc_batch: None
+[0m18:12:48.228023 [info ] [MainThread]: Registered adapter: bigquery=1.12.1
+[0m18:12:49.310950 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:12:49.310950 [debug] [MainThread]: On debug: select 1 as id
+[0m18:12:49.310950 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:12:52.421476 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: 'Runtime Error
+  Failed to authenticate with supplied credentials
+  error:
+  Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.'
+[0m18:12:52.421476 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m18:12:52.421476 [debug] [MainThread]: BigQuery adapter: Database Error
+  Runtime Error
+    Failed to authenticate with supplied credentials
+    error:
+    Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+[0m18:12:52.421476 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:12:52.421476 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:12:52.421476 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:12:52.421476 [info ] [MainThread]: Your new dbt project "taxi_dbt" was created!
+Initialized new project in C:\Users\HP\Desktop\nyc-taxi-weather-pipeline\taxi_dbt\taxi_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:12:52.421476 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m18:12:52.433011 [debug] [MainThread]: Command `dbt init` succeeded at 18:12:52.433011 after 209.68 seconds
+[0m18:12:52.433011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD7E025850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD079C2BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD7E026910>]}
+[0m18:12:52.437275 [debug] [MainThread]: Flushing usage events
+[0m18:12:54.092817 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:17:45.015526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002337DD0A910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002337DC3CB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002337DC3E8D0>]}
+
+
+============================== 16:17:45.031525 | 7fd76aed-52a0-457f-8d92-1926dfda68d0 ==============================
+[0m16:17:45.031525 [info ] [MainThread]: Running with dbt=1.12.5
+[0m16:17:45.031525 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'invocation_command': 'dbt run', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m16:17:45.035531 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\HP\Desktop\nyc-taxi-weather-pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:17:45.039528 [debug] [MainThread]: Command `dbt run` failed at 16:17:45.039528 after 0.37 seconds
+[0m16:17:45.043526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002337DC3ED90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002337DC3F4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002337DC36DD0>]}
+[0m16:17:45.043526 [debug] [MainThread]: Flushing usage events
+[0m16:17:47.491383 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:54:00.449898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184C644C350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184C65330D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184C637E650>]}
+
+
+============================== 16:54:00.465543 | 2f14220d-3695-45df-a70c-af11494e0b7d ==============================
+[0m16:54:00.465543 [info ] [MainThread]: Running with dbt=1.12.5
+[0m16:54:00.465543 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m16:54:00.465543 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\HP\Desktop\nyc-taxi-weather-pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:54:00.465543 [debug] [MainThread]: Command `dbt run` failed at 16:54:00.465543 after 0.23 seconds
+[0m16:54:00.481148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184C637EED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184C637EF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184C6447D50>]}
+[0m16:54:00.482973 [debug] [MainThread]: Flushing usage events
+[0m16:54:00.558467 [debug] [MainThread]: An error was encountered while trying to flush usage events

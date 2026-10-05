@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: taxi_raw
+    database: nyc-data-509704
+    schema: taxi_raw
+    tables:
+      - name: trips_2024
+
+  - name: weather_raw
+    database: nyc-data-509704
+    schema: weather_raw
+    tables:
+      - name: nyc_weather_2024

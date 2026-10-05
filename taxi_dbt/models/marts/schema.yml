@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: mart_daily_taxi_weather
+    description: "Business-ready daily summary combining taxi trip metrics with weather conditions."
+    columns:
+      - name: trip_date
+        description: "Calendar date of the trips and weather reading."
+        tests:
+          - not_null
+          - unique
+
+      - name: total_trips
+        description: "Total number of taxi trips that day."
+        tests:
+          - not_null

@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: stg_taxi_trips
+    description: "Cleaned, staged NYC taxi trip data — one row per trip."
+    columns:
+      - name: vendor_id
+        description: "ID of the taxi technology provider."
+        tests:
+          - not_null
+
+      - name: pickup_datetime
+        description: "Timestamp when the trip started."
+        tests:
+          - not_null
+
+      - name: fare_amount
+        description: "Base fare amount in USD."
+        tests:
+          - not_null
+
+  - name: stg_weather
+    description: "Cleaned daily NYC weather data."
+    columns:
+      - name: weather_date
+        description: "Calendar date of the weather reading."
+        tests:
+          - not_null
+          - unique
