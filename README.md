@@ -12,7 +12,7 @@ Python scripts handle data extraction and loading, while dbt manages data transf
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,docker,gcp,git,github" alt="Python, Docker, Google Cloud, Git, and GitHub" />
 </p>
-<p align="left">
+<p align="center">
   <img src="https://img.shields.io/badge/Apache%20Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white" alt="Apache Airflow" />
   <img src="https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white" alt="dbt" />
   <img src="https://img.shields.io/badge/BigQuery-669DF6?style=for-the-badge&logo=googlebigquery&logoColor=white" alt="Google BigQuery" />
