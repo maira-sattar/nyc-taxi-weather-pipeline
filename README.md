@@ -9,6 +9,18 @@ This project implements an ETL (Extract, Transform, Load) and data modeling pipe
 Python scripts handle data extraction and loading, while dbt manages data transformations and modeling within BigQuery. Apache Airflow orchestrates the workflow through a scheduled DAG, ensuring that pipeline tasks execute in the correct sequence.
 
 ## 🛠️ Tech Stack
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=python,docker,gcp,git,github" alt="Python, Docker, Google Cloud, Git, and GitHub" />
+  <img src="https://img.shields.io/badge/Apache%20Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white" alt="Apache Airflow" />
+  <img src="https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white" alt="dbt" />
+  <img src="https://img.shields.io/badge/BigQuery-669DF6?style=for-the-badge&logo=googlebigquery&logoColor=white" alt="Google BigQuery" />
+  <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+  <img src="https://img.shields.io/badge/Requests-2CA5E0?style=for-the-badge&logo=python&logoColor=white" alt="Python Requests" />
+  <img src="https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Compose" />
+  <img src="https://img.shields.io/badge/Python%20dotenv-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python dotenv" />
+  <img src="https://img.shields.io/badge/Google%20Cloud%20IAM-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Google Cloud IAM" />
+</p>
 
 | Category | Technologies |
 |---|---|
