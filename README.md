@@ -2,13 +2,13 @@
 
 An end-to-end data engineering project that extracts NYC taxi trip data and weather information, transforms and models the data using **Python, dbt, and Apache Airflow**, and loads it into **Google BigQuery**. The pipeline automates the complete ETL workflow using Docker Compose.
 
-## 📌 Project Overview
+## Project Overview
 
 This project implements an ETL (Extract, Transform, Load) and data modeling pipeline that combines NYC taxi trip records with weather information.
 
 Python scripts handle data extraction and loading, while dbt manages data transformations and modeling within BigQuery. Apache Airflow orchestrates the workflow through a scheduled DAG, ensuring that pipeline tasks execute in the correct sequence.
 
-## 🛠️ Tech Stack
+## Tech Stack
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,docker,gcp,git,github" alt="Python, Docker, Google Cloud, Git, and GitHub" />
 </p>
