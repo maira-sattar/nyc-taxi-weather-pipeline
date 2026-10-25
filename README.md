@@ -23,6 +23,10 @@ Python scripts handle data extraction and loading, while dbt manages data transf
 | Configuration | Python dotenv |
 | Version Control | Git, GitHub |
 
+## Dashboard
+
+<img width="993" height="560" alt="dashboard (1)" src="https://github.com/user-attachments/assets/431402f4-4797-4a16-aa90-8b80ab145391" />
+
 ## 📂 Project Structure
 
 ```text
